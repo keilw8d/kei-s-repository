@@ -1,0 +1,340 @@
+/* === RESET & FONTS === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ============================================================
+   HOME PAGE BACKGROUND (Dark Brown Gradient)
+   ============================================================ */
+
+body.home {
+  background: url("mountain.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+body.home .bg-img {
+  display: none;
+}
+
+/* ============================================================
+   HOME PAGE NAVBAR (RIGHT SIDE)
+   ============================================================ */
+body.home .menu-bar {
+  position: fixed;
+  right: 5%;
+  top: 15%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 25px 40px;
+  text-align: center;
+}
+
+body.home .menu-bar h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px; /* smaller than before */
+  color: white;
+  margin-bottom: 20px;
+}
+
+body.home .menu-bar ul {
+  list-style: none;
+}
+
+body.home .menu-bar li {
+  margin: 18px 0;
+}
+
+body.home .menu-bar a {
+  color: #394029;
+  font-weight: 600;
+  font-size: 22px; /* smaller */
+  text-decoration: none;
+}
+
+body.home .menu-bar a.active,
+body.home .menu-bar a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   HOME PAGE CONTENT
+   ============================================================ */
+body.home .content {
+  padding: 8%;
+  display: flex;
+  justify-content: flex-start; /* push content to the left */
+  align-items: center;
+  height: 100vh; /* vertically center the box */
+}
+
+body.home .intro {
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 55px;
+  border-radius: 18px;
+  width: 50%;
+  max-width: 700px;
+  margin-left: 5%; /* shift the box to the left */
+  text-align: left; /* better alignment for paragraph text */
+}
+
+body.home .title {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+}
+
+body.home .intro-text {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+body.home .btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+body.home .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+body.home .footer {
+  margin-top: 60px;
+  font-size: 18px;
+  color: white;
+}
+
+body.home {
+  background: linear-gradient(160deg, #3b2f2a 0%, #2c201c 40%, #1e1614 100%),
+    radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.08),
+      transparent 70%
+    );
+  background-blend-mode: overlay;
+}
+body.home .intro {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+body.home .intro {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================================
+   ARTICLE & ABOUT PAGE NAVBAR (TOP)
+   ============================================================ */
+body.artikel .menu-bar,
+body.tentang .menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+  z-index: 1000;
+  border-radius: 0 0 25px 25px;
+}
+
+body.artikel .menu-bar h1,
+body.tentang .menu-bar h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: white;
+  margin-right: 50px;
+}
+
+body.artikel .menu-bar ul,
+body.tentang .menu-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+body.artikel .menu-bar a,
+body.tentang .menu-bar a {
+  color: #394029;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+body.artikel .menu-bar a.active,
+body.tentang .menu-bar a.active,
+body.artikel .menu-bar a:hover,
+body.tentang .menu-bar a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   PAGE CONTENT SPACING
+   ============================================================ */
+body.artikel .content,
+body.tentang .content {
+  padding: 140px 10%;
+}
+
+/* ============================================================
+   ARTICLE PAGE BACKGROUND — soft blue-gray gradient
+   ============================================================ */
+body.artikel {
+  background: linear-gradient(to bottom right, #8ea0ad, #a7b4c2, #c0cbd4);
+  color: #ffffff;
+}
+
+body.artikel .article {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 15px;
+  padding: 40px;
+  margin: 60px auto;
+  width: 80%;
+  color: #fff;
+}
+
+.article h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.article h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+.article h3 {
+  font-size: 22px;
+  margin-top: 40px;
+  color: #fff;
+}
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+body.tentang {
+  background: linear-gradient(180deg, #6a4a3c, #8b6b58, #b49783);
+  color: white;
+}
+
+.about {
+  width: 80%;
+  margin: 40px auto;
+  background-color: rgba(110, 90, 70, 0.5);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.about h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile img {
+  width: 180px;
+  border-radius: 20px;
+  margin-right: 35px;
+}
+
+.bio {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-text p {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  color: white;
+  font-size: 18px;
+  line-height: 1.8;
+}
+/* === Soft shadow and animation for Home page menu bar === */
+body.home .menu-bar {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4); /* subtle glow behind */
+  animation: fadeInRight 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+/* === Same animation timing for the intro box === */
+body.home .intro {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+/* === Keyframes for both animations === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
